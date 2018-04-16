@@ -1,0 +1,25 @@
+﻿<Window x:Class="Projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <TextBlock Margin="10" FontSize="20" DockPanel.Dock="Top" HorizontalAlignment="Center" Text="SEW-Projekt-Lukas-Obmann"/>
+
+            <StackPanel Background="Red" DockPanel.Dock="Left">
+                <Button x:Name="btn_ADD" Margin="10" HorizontalAlignment="Left" Content="Add"/>
+                <Button x:Name="btn_Remove" Margin="10" HorizontalAlignment="Left" Content="Remove"/>
+                <Button x:Name="btn_Save" Margin="10" HorizontalAlignment="Left" Content="Save"/>
+                <Button Margin="10" HorizontalAlignment="Left">Chappuchino</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <ListBox x:Name="lbx_Ausgabe" Width="415"/>
+            </StackPanel>
+        </DockPanel>
+        
+    </Grid>
+</Window>
